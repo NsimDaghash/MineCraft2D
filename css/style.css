@@ -74,7 +74,6 @@ body {
 
 .instruction-window div > img {
   width: 40px;   
-                                  /*******************************/
 }
 /*
 .tool1{
@@ -146,8 +145,8 @@ body {
   font-size: 1.5rem;
   color: #fff;
   position: absolute;
-  bottom: 10px;
-  left: 20px;
+  bottom: 1vh;
+  left: 2vw;
 }
 
 /* viewed screen */                          /*        *******************               */
@@ -205,7 +204,7 @@ body {
   border: 1px solid rgb(77, 28, 28);
   border-radius: 5px;
   padding: 5px;
-  width: 65px;
+  width: 5%;                        /* 65 px  */
   color: rgb(9, 11, 42);                               
   text-align: center;
   margin-top: 5%;
@@ -235,7 +234,7 @@ body {
 .inventory,.tools {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
+  column-gap: 2%;        /* 10px*/
   margin-top: 5%;
 }
 
@@ -243,8 +242,8 @@ body {
 .item {
   border: 1px solid white;
   border-radius: 5px;
-  width: 40px;
-  height: 40px;
+  width: 4%;                        /* 40px */
+  height: 4%;
   margin: 10px auto;
   color: rgb(255, 255, 255);      /* changed from whute */
   text-align: center;

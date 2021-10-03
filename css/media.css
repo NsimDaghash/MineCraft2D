@@ -83,19 +83,19 @@
 }
 
 /* force player to move to landscape */
-@media only screen and (orientation: portrait) {
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+
   .entrence-screen {
     /* background: black; */
     text-align: center;
     overflow: hidden;
   }
-
-  .entrence-screen::before {
-    content: "Please rotate your phone to landscape to better manipulate the game";
-    position: absolute;
-    color: #fff;
-    font-weight: 900;
-    top: 49%;
+  .tool-box--right-side{
+    height: 10vh;
+    width: auto;
   }
 
   .entrence-screen button {
