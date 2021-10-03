@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---   -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b3f2b08e3.js" crossorigin="anonymous"></script>
+    <!---   -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(max-width: 700px)" href="css/media.css">
+    <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon">
+    <title>2D Minecraft</title>
+</head>
+
+<body>
+    <!-- main container -->                   <!--input h4-->
+    <div class="container">
+
+        <!-- game - left side -->
+
+        <div class='game-container--left-side'>
+            <div class="game-grid"></div>
+        </div> 
+
+        <!-- menu - right side -->
+
+        <div class="tool-box--right-side">
+            <div class="tools">  
+                <div class="picaxe">
+                    <img src="img/stone_pickaxe.png" alt="picaxe">
+                    <p>Pickaxe</p>
+                </div>
+                <div class="shovel">
+                    <img src="img/stone_shovel.png" alt="shovel">
+                    <p>Shovel</p>
+                </div>
+                <div class="axe">
+                    <img src="img/stone_axe.png" alt="axe">
+                    <p>Axe</p>
+                </div>
+                <div class="waterpucket">
+                    <img src="img/wtrpckt5.png" alt="waterpucket">
+                    <p>Water</p>
+                </div>
+                <div class="lavapucket">
+                    <img src="img/lvpckt5.png" alt="lavapucket">
+                    <p>Lava</p>
+                </div>
+            </div> 
+            <div class="inventory">
+                <div class="item grass">
+                    <h4>0</h4>
+                </div>
+                <div class="item rock">
+                    <h4>0</h4>
+                </div>
+                <div class="item soil">
+                    <h4>0</h4>
+                </div>
+                <div class="item leaves">
+                    <h4>0</h4>
+                </div>
+                <div class="item water">
+                    <h4>0</h4>
+                </div>
+                <div class="item lava">
+                    <h4>0</h4>
+                </div>                
+                <div class="item wood">
+                    <h4>0</h4>
+                </div>
+                <div class="item bushes">
+                    <h4>0</h4>
+                </div>                
+                <div class="item timer">
+                    <h4>0</h4>
+                </div>
+            </div>
+            <!-- div -->
+            <div class="sidebtn resetbtn"> <button class='btn resetbtn'>Reset</button></div>
+            <div class="sidebtn mainscreenbtn"><button class='btn '>Main Screen</button></div>
+        </div> 
+    </div> 
+
+    <!-- opening screen -->
+    <div class="entrence-screen">
+        <div>
+            <button class='btn'>instructions</button>
+            <div class="instruction-window">
+                <h1>GAME PLAY</h1>
+                <div>
+                    <div class="toolshelp">
+                        <div class="tool1"><img  src="img/stone_pickaxe.png" alt="picaxe"></div>
+                        <div class="tool1"><img  src="img/stone_shovel.png" alt="shovel"></div>
+                        <div class="tool1"><img  src="img/stone_axe.png" alt="axe"></div>
+                        <div class="tool1"><img  src="img/wtrpckt.jpg" alt="axe"></div>
+                        <div class="tool1"><img  src="img/lpucket.png" alt="axe"></div>
+                    </div>
+                    <div class='arrows'>
+                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="materials">
+                        <div><img src="img/rock.png" alt=""> </div>
+                        <div>
+                            <img src="img/soil.jpg" alt="">
+                            <img src="img/grass.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/tree-leaves.png" alt="">
+                            <img src="img/wood.png" alt="">
+                            <img src="img/bush.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/waterimg.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/lavaimg.jpg" alt="">
+
+                        </div>                        
+                    </div>
+                    <p>You have Five tools. Each tool is suitable to collect specific items.
+                        use them to collect the items and rebuild a new world.
+                        every minute you will gets one item from each material type.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div>
+           <button class='btn'>modify world</button>
+            <div class="modify-window">
+                <p>Start a game with more trees, rocks and bushes and more fun!</p>
+                <label for="trees">Amount of trees(max:6)</label><br>
+                <input type="number" name='trees' max=3 min=0 value=3><br>
+                <label for="rocks">Amount of rocks(max:6)</label><br>
+                <input type="number" name='rocks' max=3 min=0 value=3><br>
+                <label for="bushes">Amount of bushes(max:6)</label><br>
+                <input type="number" name='bushes' max=3 min=0 value=3><br>
+                <button class='btn' type="submit">Start Modified Game</button>
+            </div>
+        </div>
+
+        <div> 
+        <button class='btn'>start game</button>    
+        <p class='made-by'>Made by Nasim Daghash</p>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
