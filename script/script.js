@@ -222,12 +222,16 @@ function toggleElementsHidder(el, hide = true) {
 let notExistedLocaions; // array of x grid locations
 
 function randomWorldMaker(trees = 1, rocks = 1, bushes = 1) {
+    trees >3 ? trees = 3:trees;
+    rocks >3 ? rocks = 3:rocks;
+    bushes >3 ? bushes = 3:bushes;
+
     trees <= 1 || rocks <= 1 || bushes <= 1 ? // if only one element for each than smaller world. smaller array.
         notExistedLocaions = [...Array(40).keys()] :
         notExistedLocaions = [...Array(90).keys()]; // creating list of location on x grid (columns) 
     notExistedLocaions.shift(); // deletes 0
     notExistedLocaions.shift(); // deletes 1 // to prevent element sitting to close to the starts
-
+    
     //adjust grid to containe bigger world
     game.style.gridTemplateColumns = 'repeat(40, 1fr)'
     game.style.width = '100vmin';      /// 1650px
