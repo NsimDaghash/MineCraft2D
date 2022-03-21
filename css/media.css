@@ -71,10 +71,11 @@ h1{
 .waterpucket,
 .lavapucket {
   padding: 0;
-  width: 10vmin;       /* 25px */ 
-  height: 10vmin;
+  width: 11vmin;       /* 25px */ 
+  height: 11vmin;
   margin: 2%;         /* 5px */
-  margin-left: 2px;       
+  margin-left: 2px;   
+  margin-bottom: auto;    
   font-size: 4%;       /* 8px */ 
 }
 
@@ -83,8 +84,8 @@ h1{
 .axe > img,
 .waterpucket > img,
 .lavapucket > img{
-  width: 10vmin;
-  height: 10vmin;
+  width: 8vmin;
+  height: 8vmin;
 }
 
 .tool-box--right-side button {
@@ -125,5 +126,15 @@ h1{
 
   .entrence-screen button {
     height: 10vh;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .tool-box--right-side{
+    display: flex;
+    flex-direction: row;
   }
 }

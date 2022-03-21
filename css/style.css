@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- /* font-family: "VT323", monospace;*/
 }
 
 body {
@@ -216,7 +215,7 @@ body {
 .waterpucket:hover,
 .lavapucket:hover {
   opacity: 1;
-  background: cornflowerblue;                    /*               666666666666666666666666  */
+  background: cornflowerblue;                    
 }
 
 /* the width of the tools  images */
@@ -257,11 +256,6 @@ body {
   margin-top: 10px;
 }
 
-/*
-.sidebtn{
-  margin-top: 30px;
-}
-*/
 /* player materials */
 .cloud {
   background: url("../img/cloud.png") no-repeat center/cover;
@@ -302,4 +296,5 @@ body {
 .blue {
   background: cornflowerblue;
 }
+
 
